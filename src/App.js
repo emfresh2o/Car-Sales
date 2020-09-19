@@ -7,7 +7,7 @@ import Total from './components/Total';
 import { connect } from 'react-redux';
 import { addFeature, removeFeature } from './actions/actions';
 
-const App = (props) => {
+const App = props => {
   
   return (
     <div className="boxes">
