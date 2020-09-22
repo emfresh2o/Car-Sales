@@ -29,6 +29,7 @@ export const reducer = (state = initialState, action) => {
 
         additionaPrice: state.additionalPrice + action.payload.price
       };
+  
 
     case REMOVE_FEATURE_ITEM:
       return {
@@ -42,7 +43,7 @@ export const reducer = (state = initialState, action) => {
         additionalFeatures: [...state.additionalFeatures, action.payload],
         additionalPrice: state.additionalPrice - action.payload.price
       };
-      
+
     default:
       return state;
   }
